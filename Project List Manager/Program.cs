@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 // Basic Product Input
 
 Console.WriteLine("================================");
-Console.WriteLine("   PRODUCT MANAGEMENT SYSTEM");
+Console.WriteLine("   PRODUCT LIST MANAGER");
 Console.WriteLine("================================");
 Console.WriteLine();
 
