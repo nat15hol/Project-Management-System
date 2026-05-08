@@ -5,7 +5,7 @@
 using System.Text.RegularExpressions;
 
 Console.WriteLine("================================");
-Console.WriteLine("   PRODUCT MANAGEMENT SYSTEM");
+Console.WriteLine("   PRODUCT INVENTORY SYSTEM");
 Console.WriteLine("================================");
 Console.WriteLine();
 
@@ -40,7 +40,8 @@ while (running)
     Console.WriteLine("7. Exit");
 
     Console.Write("Choose: ");
-    string choice = Console.ReadLine();
+    //string choice = Console.ReadLine();
+    string choice = Console.ReadLine().Trim();
 
     switch (choice)
     {
@@ -184,6 +185,9 @@ while (running)
             break;
 
         case "7":
+            running = false;
+            break;
+        case var c when c.Equals("exit", StringComparison.OrdinalIgnoreCase):
             running = false;
             break;
 
